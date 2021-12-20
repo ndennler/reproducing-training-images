@@ -47,7 +47,8 @@ class CelebAImageDataset(Dataset):
 
 if __name__ == '__main__':
 
-    dataset = CelebAImageDataset('/home/nathan/Downloads/identity_CelebA.txt', '/home/nathan/Downloads/img_align_celeba', transform=None)
+    dataset = CelebAImageDataset('/home/nathan/Desktop/reproducing-training-images/data/celebA/identity_CelebA.txt', 
+    '/home/nathan/Desktop/reproducing-training-images/data/celebA/img_align_celeba', transform=None)
     dataloader = DataLoader(dataset, batch_size=4, shuffle=True, num_workers=0)
 
     for image_batch in dataloader:
