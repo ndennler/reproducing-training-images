@@ -2,3 +2,4 @@ data/*
 biva-pytorch/*
 biva-pytorch
 .vscode/*
+trained_models/*
